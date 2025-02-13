@@ -80,7 +80,7 @@ const ValentinesDay = () => {
             <button
     onClick={toggleMusic}
     className="fixed cursor-pointer top-6 right-6 bg-red-500 p-3 rounded-full text-white shadow-lg hover:bg-red-600 transition-all z-1">
-    {isPlaying ? <X className="w-6 h-6" /> : <Music className="w-6 h-6" />}
+    <Music className="w-6 h-6" />
 </button>
 
             {/* Main Content */}
