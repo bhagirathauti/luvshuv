@@ -117,20 +117,22 @@ const ValentinesDay = () => {
             {/* Love Letter Modal */}
             {showMessage && (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-out">
-        <div
-            className={`w-[50vw] bg-white/95 rounded-2xl p-8 relative shadow-lg transform transition-all duration-500 ease-in-out ${
-                showMessage ? "scale-100 opacity-100" : "scale-95 opacity-0"
-            }`}
-            style={{
-                backgroundImage: "url('/assets/20250213_233407.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                wordWrap: "break-word",
-                overflowWrap: "break-word",
-                whiteSpace: "normal",
-                maxWidth: "100%",
-            }}
-        >
+       <div
+  className={`w-full max-w-[90vw] sm:max-w-[80vw] h-[80vh] sm:h-[80vh] bg-white/95 rounded-2xl p-6 sm:p-8 relative shadow-lg transform transition-all duration-500 ease-in-out overflow-auto ${
+    showMessage ? "scale-100 opacity-100" : "scale-95 opacity-0"
+  }`}
+  style={{
+    backgroundImage: "url('/assets/20250213_233407.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    whiteSpace: "normal",
+    maxWidth: "100%",
+  }}
+>
+
+
             <button
                 onClick={() => setShowMessage(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-opacity duration-200"
@@ -149,20 +151,21 @@ const ValentinesDay = () => {
 
 {showPromiseMessage && (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-out">
-        <div
-            className={`w-[50vw] bg-white/95 rounded-2xl p-8 relative shadow-lg transform transition-all duration-500 ease-in-out ${
-                showPromiseMessage ? "scale-100 opacity-100" : "scale-95 opacity-0"
-            }`}
-            style={{
-                backgroundImage: "url('/assets/20250213_233407.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                wordWrap: "break-word",
-                overflowWrap: "break-word",
-                whiteSpace: "normal",
-                maxWidth: "100%",
-            }}
-        >
+         <div
+  className={`w-full max-w-[90vw] sm:max-w-[80vw] h-[80vh] sm:h-[80vh] bg-white/95 rounded-2xl p-6 sm:p-8 relative shadow-lg transform transition-all duration-500 ease-in-out overflow-auto ${
+    showPromiseMessage ? "scale-100 opacity-100" : "scale-95 opacity-0"
+  }`}
+  style={{
+    backgroundImage: "url('/assets/20250213_233407.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    whiteSpace: "normal",
+    maxWidth: "100%",
+  }}
+>
+
             <button
                 onClick={() => setShowPromiseMessage(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-opacity duration-200"
