@@ -57,7 +57,7 @@ const ValentinesDay = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-red-100 via-pink-100 to-purple-200 relative overflow-hidden">
             {/* Floating Hearts */}
-            <audio ref={audioRef} playsInline muted preload="auto" src="love-song.mp3" />
+            <audio ref={audioRef} playsInline muted loop preload="auto" src="love-song.mp3" />
 
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
                 {hearts.map((heart) => (
